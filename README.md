@@ -27,7 +27,6 @@ An AI-powered clinical expert system designed for real-time analysis of Drug-Dru
 
 ## 📁 Repository Structure
 
-```text
 Drug_Knowledge_Base/
 ├── app.py                            # Main Streamlit web application
 ├── drug_knowledge_pipeline.ipynb     # Pipeline notebook (EDA, Graph Building, Model Training)
@@ -36,3 +35,35 @@ Drug_Knowledge_Base/
 │   └── Drug finder db w_o brands - deepseek_csv_20250915_dff2b8.csv
 ├── requirements.txt                  # Python dependencies
 └── .gitignore                        # Standard Git ignore rules
+
+---
+
+## 🚀 Quickstart Guide
+
+### 1. Clone the Repository
+git clone https://github.com/habiba-10/Drug_Knowledge_Base.git
+cd Drug_Knowledge_Base
+
+### 2. Set Up Virtual Environment & Install Dependencies
+python -m venv venv
+source venv/bin/activate        # On Windows: venv\Scripts\activate
+pip install -r requirements.txt
+
+### 3. Run the Streamlit Application
+streamlit run app.py
+
+---
+
+## ⚙️ Model Architecture & Pipeline Workflow
+
+1. **Data Preprocessing & Cleaning**: Standardized text formatting, removed unknown target categories, and merged interaction datasets.
+2. **Graph Metric Feature Extraction**: Constructed a directed/undirected Knowledge Graph to extract structural features such as node degrees and degree centralities.
+3. **NLP Vectorization**: Extracted medical context representations using TF-IDF feature extraction.
+4. **Machine Learning Classification**: Evaluation of multiple ensemble classifiers (Random Forest, XGBoost, LightGBM, CatBoost) optimized for multi-class prediction.
+
+---
+
+## 👤 Author
+
+**Habiba Ezat**
+- GitHub: [@habiba-10](https://github.com/habiba-10)
