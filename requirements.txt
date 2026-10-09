@@ -1,0 +1,13 @@
+streamlit
+pandas
+numpy
+networkx
+scikit-learn
+xgboost
+catboost
+lightgbm
+joblib
+reportlab
+qrcode
+matplotlib
+seaborn
